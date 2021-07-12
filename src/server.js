@@ -66,7 +66,7 @@ app.post('/cars', (req, res) => {
     }
 });
 
-// The route for deleting a todo-list item
+// The route for deleting a car item
 app.delete('/cars/:id', (req, res) => {
     const { id } = req.params;
     const removedCar = fakeCars.find(car => car.id === id);
